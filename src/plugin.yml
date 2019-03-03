@@ -1,0 +1,11 @@
+name: MineWorld
+version: 0.4
+main: me.drakonn.inferno.Main
+author: Drakonn
+commands:
+  mineworld:
+    aliases: [mw]
+    decription: Main mineworld command
+  encryptedcodes:
+    aliases: [voucher]
+    description: Encrypted codes command

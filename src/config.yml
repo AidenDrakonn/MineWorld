@@ -1,0 +1,68 @@
+mineworld:
+  world: mine_world
+  exitworld: world
+  range: 100
+  lastfor: 1800
+  minbetween: 21600
+  chance:
+    common: 60
+    rare: 30
+    legendary: 10
+  activate:
+    atplayers: 100
+    attime:
+      - '17:00'
+      - '8:00'
+  chests: 500
+  allowbuilding: true
+  regenall: false
+  regendelay: 5
+  regenblocks:
+    - DIAMOND_BLOCK
+    - DIAMOND_ORE
+    - IRON_BLOCK
+    - IRON_ORE
+  blockedcommands:
+    - /tpaccept
+    - /tpahere
+    - /ah
+  messages:
+    enteredworld: '&8&l[&b&lMineWorld&8&l] &fWelcome to the mine world, You have been given the mine world kit. This will not be kept when you leave, all other items will be'
+    leftworld: '&8&l[&b&lMineWorld&8&l] &fLeaving the mine world'
+    worldstartingin30: '&8&l[&b&lMineWorld&8&l] &fThe mine world will open in 30 minutes'
+    worldstartingin10: '&8&l[&b&lMineWorld&8&l] &fThe mine world will open in 10 minutes'
+    worldstartingin5: '&8&l[&b&lMineWorld&8&l] &fThe mine world will open in 5 minutes'
+    worldendingin10: '&8&l[&b&lMineWorld&8&l] &fThe mine world will close in 10 minutes'
+    worldendingin5: '&8&l[&b&lMineWorld&8&l] &fThe mine world will close in 5 minutes'
+    worldendingin1: '&8&l[&b&lMineWorld&8&l] &fThe mine world will close in 1 minute'
+    worldopen: '&8&l[&b&lMineWorld&8&l] &fThe mine world is now open'
+    worldclosed: '&8&l[&b&lMineWorld&8&l] &fThe mine world has now closed'
+    noitems: '&c&l(!) &cYou must have an empty inventory to join the mine world'
+    invalidcommand: '&c&l(!) &cThat command is invalid, do /mineworld help for help'
+    nopermission: '&c&l(!) &cYou do not have permission to do that'
+    notinworld: '&c&l(!) You can not leave the mine world as you are not currently in it.'
+    worldnotopen: '&c&l(!) &cThe mine world is not currently open'
+    commandblocked: '&c&l(!) &cYou can not do this command in the mine world'
+    cantbuild: '&c&l(!) &cYou can not build in this world'
+
+
+encryptedcodes:
+  messages:
+    invalidcommand: '&c&l(!) &cThat command is invalid, do /encryptedcodes help for help'
+    nopermission: '&c&l(!) &cYou do not have permission to do that'
+    recievedvoucher: '&8&l[&b&lEncryptedCodes&8&l] &fYou have been given a encrypted code'
+  vouchers:
+    test:
+      lastfor: 15
+      atstart:
+        - 'broadcast test voucher started for %player%'
+      atend:
+        - 'broadcast test voucher ended for %player%'
+      item:
+        material: PAPER
+        name: '&5&lVoucher'
+        lore:
+          - '&fRedeem this voucher by right clicking'
+          - '&fIt will broadcast a test message'
+          - '&fLasts for 15 seconds'
+
